@@ -1,0 +1,20 @@
+{
+  "tokens": [
+    "xoxp-blah-blah-blah-blah",
+    "xoxp-ha-ha-ha-ha"
+  ],
+  "channels": [
+    "channel-name1",
+    "channel-name2"
+  ],
+  "groups": [
+    "group-name1",
+    "group-name2"
+  ],
+  "directs": [
+    "mark-zuckerberg",
+    "bill-gate",
+    "elon-musk"
+  ],
+  "before": "20171231"
+}
