@@ -20,7 +20,7 @@ tokens.forEach(function(token) {
       try {
         execSync(command);
       } catch(err) {
-        console.log(err);
+        console.log('Error to destroy');
       }
       console.log(`Done for ${channel}`);
     });
@@ -35,7 +35,7 @@ tokens.forEach(function(token) {
       try {
         execSync(command);
       } catch(err) {
-        console.log(err);
+        console.log('Error to destroy');
       }
       console.log(`Done for ${group}`);
     });
@@ -44,11 +44,11 @@ tokens.forEach(function(token) {
 
   if (directs) {
     console.log('Destroying directs');
-    command = `slack-cleaner --token ${token} --message --mpdirect ${directs.toString()} --user "*" --before=${before} --perform;`;
+    command = `slack-cleaner --token ${token} --message --direct ${directs.toString()} --user "*" --before=${before} --perform;`;
     try {
       execSync(command);
     } catch(err) {
-      console.log(err);
+      console.log('Error to destroy');
     }
     console.log('Done for direct');
   }
@@ -58,7 +58,7 @@ tokens.forEach(function(token) {
   try {
     execSync(command);
   } catch(err) {
-    console.log(err);
+    console.log('Error to destroy');
   }
   console.log('Done for file');
 });
